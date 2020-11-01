@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  dev:
+    build: ./Dockerfile
+    volumes:
+      - /root/src:./src
+      - /root/tests:./tests
+      - /root/sim-data:./sim-data
